@@ -1,0 +1,324 @@
+/* GENERAL SETTINGS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #FFF5F8;
+    color: #34303A;
+    line-height: 1.7;
+}
+
+/* NAVIGATION BAR */
+header {
+    background: #831843;
+    color: white;
+    padding: 22px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+header h2 {
+    font-size: 21px;
+    letter-spacing: 0.5px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #F9B8D0;
+}
+
+/* ALL SECTIONS */
+section {
+    padding: 75px 10%;
+}
+
+section h2 {
+    color: #9D174D;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+section p {
+    max-width: 750px;
+}
+
+/* HOME SECTION */
+#home {
+    background: #FCE7F0;
+    min-height: 430px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#home h1 {
+    color: #831843;
+    font-size: 42px;
+    line-height: 1.3;
+    max-width: 750px;
+    margin-bottom: 20px;
+}
+
+#home p {
+    max-width: 650px;
+    font-size: 17px;
+    color: #5B4350;
+}
+
+/* ABOUT SECTION */
+#about {
+    background: #FFFFFF;
+}
+
+/* SKILLS SECTION */
+#skills {
+    background: #FFF5F8;
+}
+
+/* PROJECTS SECTION */
+#projects {
+    background: #FCE7F0;
+}
+
+/* CONTACT SECTION */
+#contact {
+    background: #FFFFFF;
+}
+
+/* FOOTER */
+footer {
+    background: #831843;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    font-size: 14px;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    section {
+        padding: 50px 7%;
+    }
+
+    #home {
+        min-height: 350px;
+    }
+
+    #home h1 {
+        font-size: 30px;
+    }
+
+    #home p {
+        font-size: 15px;
+    }
+}/* PROFESSIONAL PINK DESIGN */
+
+/* INTRODUCTION */
+#home {
+    border-bottom: 4px solid #F9B8D0;
+}
+
+#home h1 {
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+#home p {
+    line-height: 1.9;
+}
+
+/* SECTION HEADINGS */
+section h2 {
+    border-left: 5px solid #DB2777;
+    padding-left: 15px;
+}
+
+/* SKILLS */
+#skills p {
+    background: #FCE7F0;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #F9B8D0;
+    font-weight: 600;
+    color: #831843;
+}
+
+/* PROJECTS */
+#projects p {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #F9B8D0;
+    box-shadow: 0 4px 15px rgba(131, 24, 67, 0.08);
+}
+
+/* CONTACT */
+#contact p {
+    margin-bottom: 12px;
+}
+
+/* FOOTER */
+footer {
+    letter-spacing: 0.3px;
+}
+
+/* HOVER EFFECT */
+nav a:hover {
+    text-decoration: underline;
+    transition: 0.3s;
+}
+.profile-picture {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #DB2777;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 20px rgba(131, 24, 67, 0.2);
+}
+/* HOMEPAGE LAYOUT */
+
+.home-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.profile-picture {
+    width: 250px;
+    height: 250px;
+    flex-shrink: 0;
+}
+
+.intro-text {
+    flex: 1;
+}
+
+@media (max-width: 700px) {
+    .home-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+
+    #home {
+        align-items: center;
+    }
+}
+/* PROJECT BUTTON */
+
+.project-button {
+    display: inline-block;
+    background: #831843;
+    color: white;
+    padding: 13px 28px;
+    text-decoration: none;
+    border-radius: 30px;
+    margin-top: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.project-button:hover {
+    background: #DB2777;
+    transform: translateY(-3px);
+}
+/* SKILLS CARDS */
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.skill-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #F9B8D0;
+    box-shadow: 0 4px 15px rgba(131, 24, 67, 0.08);
+}
+
+.skill-card h3 {
+    color: #831843;
+    margin-bottom: 12px;
+}
+
+.skill-card p {
+    font-size: 14px;
+}
+/* PROJECT CARDS */
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.project-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #F9B8D0;
+    box-shadow: 0 4px 15px rgba(131, 24, 67, 0.08);
+}
+
+.project-card h3 {
+    color: #831843;
+    margin-bottom: 12px;
+}
+
+.project-card p {
+    background: transparent !important;
+    padding: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+    font-weight: normal !important;
+}
+
+.project-card span {
+    display: inline-block;
+    margin-top: 15px;
+    color: #DB2777;
+    font-size: 13px;
+    font-weight: bold;
+}
